@@ -3,25 +3,25 @@
 class PlamoTrans < Formula
   desc "Local translation as a Unix filter: PLaMo 3 Translate on llama.cpp, no server"
   homepage "https://github.com/ikegam/plamo-trans"
-  version "0.1.0"
+  version "0.1.1"
   license all_of: ["BSD-4-Clause", "MIT"]
 
   on_macos do
     depends_on arch: :arm64
     on_arm do
       url "https://github.com/ikegam/plamo-trans/releases/download/v#{version}/plamo-trans-#{version}-macos-arm64.tar.gz"
-      sha256 "9490b07085ef6f97cc2ef1c9f1bc4b3cadacba8a79eba4e0590f0fadbb21e36f" # macos-arm64
+      sha256 "d810fdb6d8c9e305087a44aa0ae64c343eb096bdc734d3cf0bd17f9af966f1ba" # macos-arm64
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/ikegam/plamo-trans/releases/download/v#{version}/plamo-trans-#{version}-linux-x86_64.tar.gz"
-      sha256 "345c24eb043d560c7c8a800e41cce9f3f890d6a7bface1944b6e54a45ba66ecc" # linux-x86_64
+      sha256 "b353f6b3aed001d95e99fffaea4dd97cfcec4ff1b1ea69d9be8a11b5e2ec5a3d" # linux-x86_64
     end
     on_arm do
       url "https://github.com/ikegam/plamo-trans/releases/download/v#{version}/plamo-trans-#{version}-linux-arm64.tar.gz"
-      sha256 "bd38ce7763aaf8c7bcba7901c6d02409e0c3b9edafffc75d35734070d364c5a5" # linux-arm64
+      sha256 "6913ab922a5361b7e09b1f8d50014bb1bf91ef2d0ecfbf91b782e00feb5b47ec" # linux-arm64
     end
   end
 
